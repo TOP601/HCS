@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff">
+    <include
+        layout="@layout/bar_title"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:id="@+id/repair_rb_public"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_tab_background"
+                android:button="@null"
+                android:drawableLeft="@drawable/tab_property_repair_public_btn"
+                android:gravity="center"
+                android:text="公共"
+                android:textColor="@drawable/color_radiobutton"
+                android:checked="true"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                android:id="@+id/repair_rb_personal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_tab_background"
+                android:button="@null"
+                android:drawableLeft="@drawable/tab_property_repair_public_btn"
+                android:gravity="center"
+                android:text="个人"
+                android:textColor="@drawable/color_radiobutton"
+                android:textSize="20sp"/>
+        </LinearLayout>
+    </RadioGroup>
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+            <Spinner android:id="@+id/spn_repair_type"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:prompt="@string/repair_price_list"/>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <EditText android:id="@+id/feedback_content"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:maxEms="10"
+                android:minEms="10"
+                android:hint="请输入您的反馈意见（字数500以内）"
+                android:gravity="top"
+                android:layout_marginBottom="160dip"/>
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/imageView"
+                android:background="#999"
+                android:layout_marginBottom="80dip"
+                android:layout_alignParentBottom="true"/>
+            <Button android:id="@+id/feedback_submit"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="提交反馈"
+                android:textSize="19dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30dip"
+                android:layout_alignParentBottom="true"/>
+
+            <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="30dip"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true">
+
+                <TextView android:id="@+id/tv_repair_tel"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="维修电话：021-36768696"/>
+
+                <ImageButton
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imgBtn_repair_tel"
+                    android:layout_weight="0"
+                    android:background="@drawable/phone"
+                    android:tint="#ff0000"/>
+
+                <TextView android:id="@+id/tv_repair_price_list"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/repair_price_list"
+                    android:gravity="right"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

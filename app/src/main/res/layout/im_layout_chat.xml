@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/bar_title"/>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_chat"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f3f7f8" >
+    <LinearLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:focusableInTouchMode="true">
+
+        <!-- 聊天输入框 -->
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/im_custom_facerelativelayout" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/rl_bottom"
+        android:layout_below="@layout/bar_title"
+        android:cacheColorHint="#0000"
+        android:divider="@null"
+        android:dividerHeight="5dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:stackFromBottom="true" />
+
+</RelativeLayout>
+</LinearLayout>

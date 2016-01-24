@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="publicRepairType">
+        <item>公共111</item>
+        <item>公共222</item>
+        <item>公共333</item>
+        <item>公共444</item>
+        <item>公共555</item>
+    </string-array>
+    <string-array name="personalRepairType">
+        <item>个人111</item>
+        <item>个人222</item>
+        <item>个人333</item>
+        <item>个人444</item>
+        <item>个人555</item>
+    </string-array>
+    <string-array name="live">
+        <item>二手</item>
+        <item>快递</item>
+        <item>家政</item>
+        <item>外卖</item>
+        <item>装修</item>
+        <item>租房</item>
+        <item>干洗</item>
+        <item>维修</item>
+        <item>缴费</item>
+        <item>开锁</item>
+        <item>宠物</item>
+        <item>亲子</item>
+    </string-array>
+    <string-array name="live_url">
+        <item>http://139.196.21.14:8081/Notice/Detail/1</item>
+        <item>http://139.196.21.14:8081/Notice/Detail/1</item>
+        <item>http://139.196.21.14:8081/Notice/Detail/1</item>
+        <item>http://139.196.21.14:8081/Notice/Detail/1</item>
+        <item>http://139.196.21.14:8081/Notice/Detail/1</item>
+        <item>http://139.196.21.14:8081/Notice/Detail/1</item>
+        <item>http://139.196.21.14:8081/Notice/Detail/1</item>
+        <item>http://139.196.21.14:8081/Notice/Detail/1</item>
+        <item>http://139.196.21.14:8081/Notice/Detail/1</item>
+        <item>http://139.196.21.14:8081/Notice/Detail/1</item>
+        <item>http://139.196.21.14:8081/Notice/Detail/1</item>
+        <item>http://139.196.21.14:8081/Notice/Detail/1</item>
+    </string-array>
+    <array name="i_live">
+        <item>@drawable/i_recycle</item>
+        <item>@drawable/i_package</item>
+        <item>@drawable/i_house</item>
+        <item>@drawable/i_food</item>
+        <item>@drawable/i_decorate</item>
+        <item>@drawable/i_rent</item>
+        <item>@drawable/i_clothes</item>
+        <item>@drawable/i_repair_live</item>
+        <item>@drawable/i_money</item>
+        <item>@drawable/i_key</item>
+        <item>@drawable/i_pet</item>
+        <item>@drawable/i_baby</item>
+    </array>
+    <string-array name="property">
+        <item>报修</item>
+        <item>投诉</item>
+        <item>停车</item>
+        <item>物业费</item>
+        <item>门卫</item>
+        <item>访客</item>
+    </string-array>
+    <array name="i_property">
+        <item>@drawable/i_repair</item>
+        <item>@drawable/i_complaint</item>
+        <item>@drawable/i_park</item>
+        <item>@drawable/i_fee</item>
+        <item>@drawable/i_safe</item>
+        <item>@drawable/i_visit</item>
+    </array>
+</resources>
